@@ -26,13 +26,16 @@
   }
 </style>
 
-<div class="container-fluid">
-  <h2 class="red-text">CatPhotoApp</h2>
+<div class="container-fluid"> <!--Note: repositioned this to occur after <style/> element-->
+  <h2 class="red-text text-center">CatPhotoApp</h2> <!--Note: added text-center-->
 
   <p>Click here for <a href="#">cat photos</a>.</p>
 
   <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
-  <img class = 'img-responsive' src = "https://bit.ly/fcc-running-cats">
+  <img class = 'img-responsive' src = "https://bit.ly/fcc-running-cats"> <!--Note: set the class to img-responsive from bootstrap-->
+  <button class = 'btn btn-block btn-primary'>Like</button> <!--Note: added button with class btn & btn-block & btn-primary, taking up 100% width, changed color-->
+  <button class="btn btn-block btn-info">info</button> <!-- Note: added info button -->
+  <button class="btn btn-block btn-danger">Delete</button>
 
   <p>Things cats love:</p>
   <ul>
