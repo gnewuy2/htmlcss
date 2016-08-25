@@ -33,9 +33,11 @@
 
   <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
   <img class = 'img-responsive' src = "https://bit.ly/fcc-running-cats"> <!--Note: set the class to img-responsive from bootstrap-->
-  <button class = 'btn btn-block btn-primary'>Like</button> <!--Note: added button with class btn & btn-block & btn-primary, taking up 100% width, changed color-->
-  <button class="btn btn-block btn-info">info</button> <!-- Note: added info button -->
-  <button class="btn btn-block btn-danger">Delete</button>
+  <div class = 'row'><!--Note: used div to align buttons into one row -->
+	<div class = 'col-xs-4'><button class = 'btn btn-block btn-primary'>Like</button></div> <!--Note: added button with class btn & btn-block & btn-primary, taking up 100% width, changed color-->
+	<div class = 'col-xs-4'><button class="btn btn-block btn-info">info</button></div> <!-- Note: added info button -->
+	<div class = 'col-xs-4'><button class="btn btn-block btn-danger">Delete</button></div>
+  </div>
 
   <p>Things cats love:</p>
   <ul>
