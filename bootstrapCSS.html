@@ -1,3 +1,9 @@
+<!--red-text: custom red defined in the body below
+	small-image: custom size of image defined in the style body below
+	text-primary: blue text default defined in Bootstrap
+	img-responsive: responsive width default defined in Bootstrap
+	font-family: Monospace; this is not a very nice looking font, removing it makes it nicer
+-->
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .red-text {
@@ -10,7 +16,7 @@
 
   p {
     font-size: 16px;
-    font-family: Monospace;
+    <!--font-family: Monospace;-->
   }
 
   .thick-green-border {
@@ -26,12 +32,16 @@
 </style>
 
 <div class="container-fluid">
-  <h2 class="red-text text-center">CatPhotoApp</h2>
+   <div class = "row">
+    <div class = "col-xs-8"> <h2 class="text-primary text-center">CatPhotoApp</h2>
 
   <p>Click here for <a href="#">cat photos</a>.</p>
+    </div>
+    <div class = "col-xs-4">
 
-  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
-
+  <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+    </div>
+  </div>
   <img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">
   <div class="row">
     <div class="col-xs-4">
@@ -44,7 +54,7 @@
       <button class="btn btn-block btn-danger">Delete</button>
     </div>
   </div>
-  <p>Things cats love:</p>
+  <p>Things cats <span class = "text-danger">love</span>:</p>
   <ul>
     <li>cat nip</li>
     <li>laser pointers</li>
