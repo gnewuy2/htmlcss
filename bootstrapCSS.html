@@ -3,6 +3,9 @@
 	text-primary: blue text default defined in Bootstrap
 	img-responsive: responsive width default defined in Bootstrap
 	font-family: Monospace; this is not a very nice looking font, removing it makes it nicer
+You can add Font Awesome to any app just by including it by adding the following code to the top of your HTML:
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 -->
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -45,13 +48,13 @@
   <img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">
   <div class="row">
     <div class="col-xs-4">
-      <button class="btn btn-block btn-primary">Like</button>
+      <button class="btn btn-block btn-primary">Like<i class = "fa fa-thumbs-up"></i></button>
     </div>
     <div class="col-xs-4">
-      <button class="btn btn-block btn-info">Info</button>
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle">Info</i></button>
     </div>
     <div class="col-xs-4">
-      <button class="btn btn-block btn-danger">Delete</button>
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash">Delete</i></button>
     </div>
   </div>
   <p>Things cats <span class = "text-danger">love</span>:</p>
@@ -67,12 +70,21 @@
     <li>other cats</li>
   </ol>
   <form action="/submit-cat-photo">
-    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <div class = "row">
+      <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Indoor</label></div>
+      <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Outdoor</label></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
     <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
     <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
     <label><input type="checkbox" name="personality"> Crazy</label>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
+      </div>
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane">Submit</i></button>
   </form>
 </div>
